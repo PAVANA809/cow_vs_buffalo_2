@@ -69,6 +69,7 @@ def preprocess_image(img, target_size):
     img = img.resize(target_size)
     img = img_to_array(img)
     img = np.expand_dims(img, axis=0)
+    print("before returning processed img")
     return img
 
 def predict(img):
