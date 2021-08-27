@@ -40,6 +40,7 @@ def upload_image():
         # path = "static/images/uploads/"+image.filename
         # img = image.load_img(path)
         processed_image = preprocess_image(image, target_size=(224, 224))
+        print("img preprocess is done")
         prediction = predict(processed_image)
         print(prediction)
         response = {
