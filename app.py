@@ -5,12 +5,6 @@ import base64
 from PIL import Image
 import io
 import re
-import keras
-from keras.preprocessing.image import img_to_array
-from keras.models import load_model
-import numpy as np
-import pickle
-
 
 app = Flask(__name__)
 
@@ -18,6 +12,15 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return render_template('index.html')
+
+import keras
+from keras.preprocessing.image import img_to_array
+from keras.models import load_model
+import numpy as np
+import pickle
+
+
+
 
 app.config["IMAGE_UPLOADS"] = "static/images/uploads"
 
