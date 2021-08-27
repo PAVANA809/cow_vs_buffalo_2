@@ -61,6 +61,7 @@
                 'image':base64Image
             }
             // alert(message)
+            alert("next is ajax")
             $.ajax({
                 data:JSON.stringify(message),
                 dataType:'json',
@@ -69,6 +70,7 @@
                 contentType:false,
                 processData:false,
                 success:function(data){
+                    alert("we get response")
                     $('#cow').html(data['cow'])
                     $('#buffalo').html(data["buffalo"])
                 }

@@ -17,7 +17,6 @@ from tensorflow import keras
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
 import numpy as np
-import pickle
 
 
 
