@@ -12,8 +12,8 @@ app = Flask(__name__)
 @app.route('/index')
 def index():
     return render_template('index.html')
-
-import keras
+import tensorflow as tf
+from tensorflow import keras
 from keras.preprocessing.image import img_to_array
 from keras.models import load_model
 import numpy as np
