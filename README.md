@@ -1,1 +1,1 @@
-# cow_vs_buffalo_2
+# cow_vs_buffalo
